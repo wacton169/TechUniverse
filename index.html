@@ -9,6 +9,9 @@
 <body>
     <!-- Navigation Bar -->
     <nav>
+        <div class="logo">
+            <img src="logo.png" alt="TechUniverse Logo">
+        </div>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="products.html">Products</a></li>
@@ -19,15 +22,51 @@
     </nav>
 
     <!-- Home Page Content -->
-    <section id="home">
+    <header class="hero-section">
         <h1>Welcome to TechUniverse</h1>
         <p>Your ultimate destination for the latest tech gadgets.</p>
         <a href="products.html" class="shop-now">Shop Now</a>
+    </header>
+
+    <!-- Featured Products Section -->
+    <section id="featured-products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="product1.jpg" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>$99.99</p>
+                <a href="product1.html" class="buy-now">Buy Now</a>
+            </div>
+            <div class="product">
+                <img src="product2.jpg" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>$149.99</p>
+                <a href="product2.html" class="buy-now">Buy Now</a>
+            </div>
+            <!-- Add more products as needed -->
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section id="newsletter">
+        <h2>Stay Updated</h2>
+        <p>Sign up for our newsletter to receive the latest tech news and exclusive offers.</p>
+        <form action="subscribe.html" method="post">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 TechUniverse. All rights reserved.</p>
+        <div class="footer-content">
+            <p>&copy; 2025 TechUniverse. All rights reserved.</p>
+            <ul>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
